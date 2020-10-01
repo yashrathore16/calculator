@@ -5,7 +5,7 @@ class Calculator {
     this.clear()
   }
 
-  clear() {
+  clear() {                                //Clears the screen
     this.currentOperand = ''
     this.previousOperand = ''
     this.operation = undefined
@@ -13,7 +13,8 @@ class Calculator {
 
   
 
-  appendNumber(number) {
+  appendNumber(number)                     // Displays the numbers on your screen as you input
+  {                   
     if (number === '.' && this.currentOperand.includes('.')) return
     this.currentOperand = this.currentOperand.toString() + number.toString()
   }
